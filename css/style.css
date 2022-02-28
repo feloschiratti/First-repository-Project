@@ -1,0 +1,657 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Montserrat';
+}
+
+
+
+/**selectores de elementos en header**/
+
+.header{
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: 260px;
+}
+
+.header__logo{
+    display: inline-block;
+}
+
+.header__menu{
+    margin-right: 3rem;
+}
+
+.header__lista{
+    height: 100px;
+}
+
+.header__lista li{
+    display: inline-block;
+    text-decoration: none;
+    list-style: none;
+    padding: 1rem;
+   
+}
+
+.header__lista li a{
+    text-decoration: none;
+    font-weight: 500;
+    color: black;
+    font-size: 2vw;
+ }
+ .header__lista li a:hover{
+    color:#034f92; 
+ }
+
+ /**MOBILE-FIRST HEADER*/
+
+ @media screen and (max-width:600px){
+    .header{
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        justify-content: center;
+        align-items: center ;
+        height: 650px;
+    }
+
+    .header__menu{
+        margin-right: 0px;
+    }
+
+    .header__lista li{
+        display: block;
+        text-decoration: none;
+        list-style: none;
+        padding: 1rem;
+        text-align: center; 
+    }
+
+    .header__lista li a{
+        font-size: 3vw;
+     }
+ }
+
+ /**selectores de elementos main*/
+
+ /*primer elemento seccion principal index**/
+
+ .secppal{
+    display: flex; 
+    flex-direction: row;
+    align-items: center;
+    padding: 3rem;
+    height: 400px;
+ }
+
+ .secppal__titulo{
+    font-weight: 700;
+    color: black;
+    font-size: 2.8vw;
+    width: 50%;
+ }
+
+ .secppal__parrafo{
+     padding: 2rem;
+    font-weight: 400;
+    text-align: justify;
+    color: black;
+    font-size: 1.6vw;
+    width: 50%;
+ }
+
+ .container1{
+     display: grid;
+     grid-template-columns: 30% 30% 30%;
+     grid-template-areas: "card1 card2 card3";
+     justify-content: space-evenly;
+     align-content: center;
+     align-items: center;
+     }
+
+.card1{
+    grid-area: card1;
+}
+.card2{
+    grid-area: card2;
+}
+.card3{
+    grid-area: card3;
+}
+
+.container1__card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 350px;
+    justify-content: space-evenly;
+    transition: all 500ms;
+ }
+
+ .container1__card:hover{
+     transform: scale(1.1);
+ }
+
+.container1__card h2{
+    font-size: 2vw;
+     text-align: center;
+     font-weight: 600;
+     padding-bottom: 2rem;
+ }
+
+ .container1__card p{
+     padding-top: 2rem;
+     font-size: 1.2vw;
+ }
+
+  /**segundo elemento seccion principal index**/
+
+  .container2{
+    height: 1200px;
+    display: flex;
+    flex-direction: column;
+   justify-content: center;
+}
+
+.container2 h2{
+    padding: 2rem;
+    margin-top: 2rem;
+    font-weight: 500;
+    color: black;
+    font-size: 2vw;
+    text-align: center;
+}
+
+.container2 img{
+display: flex;
+justify-content: center;
+}
+
+.boton__container{
+    padding: 1.5rem;
+display: flex;
+justify-content: center;
+}
+
+.boton__container button:hover{
+    box-shadow: 1px 2px 3px 0px gray;
+    background-color: #6e90ad;
+}
+
+.boton__container button{
+    width: 19rem;
+    height: 2.6rem;
+    border-radius: 0.1rem;
+    border-style: none;
+    transition: all 500ms;
+}
+
+.boton__container a{
+    display: block;
+    text-decoration: none;
+    color: black;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.boton__container a:hover{
+    color: white;
+}
+
+ /**MOBILE-FIRST INDEX*/
+ @media screen and (max-width:600px){
+    .secppal{
+        display: flex; 
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+        height: 250px;
+     }
+     .container1{
+        display: grid;
+        grid-template-columns: 90%;
+        grid-template-rows: 470px 470px 470px;
+        grid-template-areas: "card1" 
+                             "card2" 
+                             "card3";
+        justify-content: space-evenly;
+        align-content:space-between;
+        align-items: center;
+        width: 100%;
+        }
+    
+        .container2{
+            height: 500px;
+            display: flex;
+            flex-direction: column;
+           justify-content: center;
+        }
+
+        .secppal__titulo{
+            font-size: 3vw;
+            
+         }
+        
+         .secppal__parrafo{
+            font-size: 2.5vw; 
+         }
+         .container1__card h2{
+            font-size: 3.2vw;  
+         }
+         .container1__card p{
+            font-size: 2vw;
+        }
+ }
+
+
+ /**seccion Ceos pagina nosotros**/
+ 
+ .section__ceos{
+    display: grid;
+    grid-template-columns: 40% 40%;
+    grid-template-areas: 
+    "massimo elena"
+    "kitchen kitchen";
+    justify-content: space-evenly;
+    justify-items: center;
+ }
+ .massimoBottura{
+     grid-area: massimo;
+ }
+ .elenaArzak{
+    grid-area: elena;
+}
+.kitchen{
+    grid-area: kitchen;
+}
+
+ .card__ceo{
+     width: 70%;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     text-align: center;
+     transition: all 500ms;
+     padding: 1.5rem;
+ }
+
+ .card__ceo:hover{
+     background-color: #a7bbcc;
+ }
+
+ .card__ceo p{
+    font-size: 1.4vw;
+}
+
+ .card__ceo h4{
+     padding: 1.5rem;
+ }
+
+    .card__ceo h3{
+        font-size: 2vw;
+        font-weight: 600;
+        padding: 1rem;
+    }
+
+    .section__home{
+        width: 90%;
+    }
+   
+    .section__home h2{
+        margin-top: 2rem;
+        font-size: 2.5vw;
+    }
+
+    .section__home p{
+        margin-top: 1rem ;
+        margin-bottom: 2rem;
+        font-size: 1.5 vw;
+    }
+
+    /**MOBILE-FIRST NOSOTROS*/
+ @media screen and (max-width:600px){
+    .section__ceos{
+        display: grid;
+        grid-template-columns: 90%;
+        grid-template-rows: 700px 700px 800px;
+        grid-template-areas: 
+        "massimo"
+        "elena"
+        "kitchen";
+        justify-content: space-evenly;
+        justify-items: center;
+     }
+     .card__ceo p{
+        font-size: 2vw;
+    }
+    .card__ceo h3{
+        font-size: 3vw;
+    }
+     
+ }
+
+    /**seccion servicios paginas servicios**/
+
+
+    .service__card{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin: 2rem;
+        padding: 2rem;
+    }
+    .service__card div{
+        background-color:#a7bbcc;
+        height: 250px;
+        padding: 1.5rem;
+        transform: translate(2rem);
+        
+    }
+
+    .service__card img{
+        width: 60%;
+    }
+    .service__card h3{
+        font-size: 2vw;
+        font-weight: 600;
+        text-align: center;
+        padding: 1rem;
+    }
+
+    .service__form{
+        display: grid;
+    grid-template-columns: 45% 45%;
+    grid-template-areas: 
+    "image form";
+    justify-content: space-evenly;
+    animation-name: aparecer;
+    animation-duration: 2s;
+    }
+
+    .form__img img{
+        width:100% ;
+    }
+
+    .form__data form{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 2rem;
+        width: 100%;
+    }
+    .form__data h3{
+        margin-bottom: 1rem;
+        font-size: 2rem;
+    }
+
+    .form__data label{
+        margin: 1rem;
+        font-size: 1.1rem;
+    }
+
+    .form__data textarea{
+        margin-bottom: 1rem;
+    }
+
+    .form__data select{
+        font-size: 1.1rem;
+    }
+
+    .form__data form input{
+        font-size: 1.5vw;
+    }
+
+     /**MOBILE-FIRST SERVICIOS*/
+ @media screen and (max-width:600px){
+    .service__card{
+        display: flex;
+        flex-direction: column;
+        margin: 1rem;
+        padding: 1rem;
+    }
+    .service__card img{
+        width: 90%;
+    }
+    .service__card h3{
+        font-size: 4vw;
+        font-weight: 600;
+    }
+    .service__form{
+        display: grid;
+    grid-template-columns: 90%;
+    grid-template-rows: 400px 1000px;
+    grid-template-areas: 
+    "image" 
+    "form";
+    justify-content: space-evenly;
+    }
+ }
+
+
+    /**seccion chefs paginas CHEFS**/
+    .chefs{
+        display: grid;
+        grid-template-columns: 25% 25% 25%;
+        grid-template-areas: 
+        "card1 card2 card3"
+        "card4 card5 card6";
+        padding: 3rem;
+        justify-content: space-evenly;
+    }
+
+    .card1{
+        grid-area: card1;
+        text-align: center;
+    }
+    .card2{
+        grid-area: card2;
+        text-align: center;
+    }
+    .card3{
+        grid-area: card3;
+        text-align: center;
+    }
+    .card4{
+        grid-area: card4;
+        text-align: center;
+    }
+    .card5{
+        grid-area: card5;
+        text-align: center;
+    }
+    .card6{
+        grid-area: card6;
+        text-align: center;
+    }
+
+    .chefs__card h3{
+        margin-top: 1rem;
+        font-size: 2vw;
+        margin-bottom: 1rem;
+    }
+
+    .chefs__card{
+        filter: grayscale(1);
+    }
+
+    .chefs__card:hover{
+        filter: grayscale(0);
+    }
+
+    /**MOBILE-FIRST CHEFS*/
+ @media screen and (max-width:600px){
+    .chefs{
+        display: grid;
+        grid-template-columns: 90%;
+        grid-template-rows: 500px 500px 500px 500px 500px 500px;
+        grid-template-areas: 
+        "card1"
+         "card2" 
+         "card3"
+        "card4" 
+        "card5" 
+        "card6";
+        padding: 3rem;
+        justify-content: space-evenly;
+    }
+  }
+
+    /**formulario pagina contacto**/
+    .sec__contact{
+        display: grid;
+        grid-template-columns:  45% 45%;
+        grid-template-areas: "imagen form";
+        justify-content: space-evenly;
+        margin: 2rem 0rem 2.5rem 0rem;
+    }
+
+    .image__form img{ 
+        width: 100%;
+        animation-name: aparecer;
+        animation-duration: 2s;
+    }
+
+    @keyframes aparecer {
+        0%{
+            opacity: 0;
+        }
+
+        100%{
+            opacity:1;
+        }
+    }
+
+    .form__contact form{
+        display: flex;
+        flex-direction: column;
+        width:100%;
+        font-size: 1.5vw;
+    }
+    .form__contact{
+        padding: 0rem 2.5rem 0.5rem 2.5rem;
+    }
+
+    .form__contact form input{
+        margin-top: 0.8rem;
+        margin-bottom: 0.8rem;
+        font-size: 1.5vw;
+    }
+
+    .input{
+        border-style: none;
+        width: 14rem;
+        height: 2.5rem;
+        align-self: center;
+        transition: 500ms;
+        border-radius: 0.3rem;
+    }
+
+    .input:hover{
+        background-color:#6e90ad;
+        color: beige;
+        cursor: pointer;
+    }
+
+    /**MOBILE-FIRST CONTACTO*/
+ @media screen and (max-width:600px){
+    .sec__contact{
+        display: grid;
+        grid-template-columns:  90%;
+        grid-template-rows: 400px 400px;
+        grid-template-areas: "imagen" 
+                              "form";
+        justify-content: space-evenly;
+        margin: 2rem 0rem 2.5rem 0rem;
+    }
+    .form__contact form input{
+        font-size: 2.5vw;
+    }
+    .form__contact form{
+        font-size: 2.5vw;
+    }
+ }
+
+ /**selectores de elementos en footer**/
+
+ .section__footer{
+     display: flex;
+     width: 100%;
+ }
+ .seccion__jobs{
+     width: 50%;
+ }
+
+ .seccionFinal{
+     background-color: #18242e;
+     height: 280px;
+ }
+ 
+ .section__footer h3{
+    padding-top: 2rem;
+    color: white;
+    font-size: 1.5vw;
+    text-align: center;
+ }
+
+
+ .seccion__jobs p{
+    color: white;
+    font-size: 1.2vw;
+    text-align: center;
+    padding-top: 0.5rem;
+    text-align: center;
+ }
+ 
+ .seccion__contacto{
+     width: 50%;
+     
+ }
+
+ .seccion__contacto ul{
+ color: white;
+ font-size: 1.2vw;
+ text-align: center;
+ padding-top: 0.5rem;
+ list-style: none;
+}
+
+ .textoFooter{
+     color: white;
+     font-size: 1vw;
+     text-align: center;
+     padding-top: 2rem;
+     padding-bottom: 1rem;
+ }
+
+ /**MOBILE-FIRST FOOTER*/
+
+ @media screen and (max-width: 600px){
+    .section__footer{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .seccion__contacto{
+        width: 100%;
+        text-align: center;
+    }
+    .seccion__jobs{
+        width: 100%;
+        text-align: center;
+    }
+    .seccion__jobs p{
+        font-size: 2vw;
+        margin: 0rem 1rem 0rem 1rem;
+    }
+    .seccion__contacto ul{
+        font-size: 2vw; 
+ }
+ .section__footer h3{
+    font-size: 2.1vw; 
+ }
+}
+
