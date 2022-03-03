@@ -9,72 +9,20 @@
 /**selectores de elementos en header**/
 
 .header{
-    display: flex;
-    flex-direction: row;
-    background-color: white;
-    justify-content: space-between;
-    align-items: flex-end;
-    height: 260px;
+  width: 100%;
 }
 
-.header__logo{
-    display: inline-block;
-}
 
-.header__menu{
-    margin-right: 3rem;
-}
 
-.header__lista{
-    height: 100px;
-}
-
-.header__lista li{
-    display: inline-block;
-    text-decoration: none;
-    list-style: none;
-    padding: 1rem;
-   
-}
-
-.header__lista li a{
-    text-decoration: none;
+ .font__header{
+     font-family: 'Montserrat';
+     font-size: 1.5rem;
+    padding: 0rem 1rem 0rem 1rem;
     font-weight: 500;
-    color: black;
-    font-size: 2vw;
- }
- .header__lista li a:hover{
-    color:#034f92; 
  }
 
  /**MOBILE-FIRST HEADER*/
 
- @media screen and (max-width:600px){
-    .header{
-        display: flex;
-        flex-direction: column;
-        background-color: white;
-        justify-content: center;
-        align-items: center ;
-        height: 650px;
-    }
-
-    .header__menu{
-        margin-right: 0px;
-    }
-
-    .header__lista li{
-        display: block;
-        text-decoration: none;
-        list-style: none;
-        padding: 1rem;
-        text-align: center; 
-    }
-
-    .header__lista li a{
-        font-size: 3vw;
-     }
- }
 
  /**selectores de elementos main*/
 
@@ -111,6 +59,7 @@
      justify-content: space-evenly;
      align-content: center;
      align-items: center;
+     margin-top: 10rem;
      }
 
 .card1{
@@ -127,7 +76,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 350px;
+    height: 300px;
     justify-content: space-evenly;
     transition: all 500ms;
  }
@@ -159,10 +108,9 @@
 
 .container2 h2{
     padding: 2rem;
-    margin-top: 2rem;
-    font-weight: 500;
+    font-weight: 700;
     color: black;
-    font-size: 2vw;
+    font-size: 1.5rem;
     text-align: center;
 }
 
@@ -222,6 +170,7 @@ justify-content: center;
         align-content:space-between;
         align-items: center;
         width: 100%;
+        height: 1700px;
         }
     
         .container2{
@@ -239,6 +188,7 @@ justify-content: center;
          .secppal__parrafo{
             font-size: 2.5vw; 
          }
+
          .container1__card h2{
             font-size: 3.2vw;  
          }
@@ -299,6 +249,7 @@ justify-content: center;
 
     .section__home{
         width: 90%;
+        height: 750px;
     }
    
     .section__home h2{
@@ -336,7 +287,6 @@ justify-content: center;
 
     /**seccion servicios paginas servicios**/
 
-
     .service__card{
         display: flex;
         flex-direction: row;
@@ -344,12 +294,16 @@ justify-content: center;
         margin: 2rem;
         padding: 2rem;
     }
-    .service__card div{
+    .service__card .card{
         background-color:#a7bbcc;
-        height: 250px;
+        height: 280px;
         padding: 1.5rem;
         transform: translate(2rem);
-        
+    }
+
+    .card__2{
+        height: auto;
+        background-color: #a7bbcc;
     }
 
     .service__card img{
@@ -363,6 +317,7 @@ justify-content: center;
     }
 
     .service__form{
+        margin-top: 8rem;
         display: grid;
     grid-template-columns: 45% 45%;
     grid-template-areas: 
@@ -586,7 +541,7 @@ justify-content: center;
 
  .seccionFinal{
      background-color: #18242e;
-     height: 280px;
+     height: 300px;
  }
  
  .section__footer h3{
