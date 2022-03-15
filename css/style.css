@@ -1,654 +1,469 @@
-*{
-    margin: 0px;
-    padding: 0px;
-    font-family: 'Montserrat';
-}
+/**selectores de elementos en footer**/
+.section__footer {
+  display: flex;
+  width: 100%; }
 
+.seccion__jobs {
+  width: 50%; }
 
+.seccionFinal {
+  background-color: #18242e;
+  height: 330px; }
+
+.section__footer h3 {
+  padding-top: 2rem;
+  color: white;
+  font-size: 1.5vw;
+  text-align: center; }
+
+.seccion__jobs p {
+  color: white;
+  font-size: 1.2vw;
+  text-align: center;
+  padding-top: 0.5rem;
+  text-align: center; }
+
+.seccion__contacto {
+  width: 50%; }
+
+.seccion__contacto ul {
+  color: white;
+  font-size: 1.2vw;
+  text-align: center;
+  padding-top: 0.5rem;
+  list-style: none; }
+
+.textoFooter {
+  color: white;
+  font-size: 1vw;
+  text-align: center;
+  padding-top: 2rem;
+  padding-bottom: 1rem; }
+
+/**MOBILE-FIRST FOOTER*/
+@media screen and (max-width: 600px) {
+  .section__footer {
+    display: flex;
+    flex-direction: column;
+    width: 100%; }
+  .seccion__contacto {
+    width: 100%;
+    text-align: center; }
+  .seccion__jobs {
+    width: 100%;
+    text-align: center; }
+  .seccion__jobs p {
+    font-size: 2vw;
+    margin: 0rem 1rem 0rem 1rem; }
+  .seccion__contacto ul {
+    font-size: 2vw; }
+  .section__footer h3 {
+    font-size: 2.1vw; } }
 
 /**selectores de elementos en header**/
+.font__header {
+  font-family: 'Montserrat';
+  font-size: 1.5rem;
+  padding: 0rem 1rem 0rem 1rem;
+  font-weight: 500; }
 
- .font__header{
-     font-family: 'Montserrat';
-     font-size: 1.5rem;
-    padding: 0rem 1rem 0rem 1rem;
-    font-weight: 500;
- }
-
- /**MOBILE-FIRST HEADER*/
-
-
- /**selectores de elementos main*/
-
- /*primer elemento seccion principal index**/
-
- .secppal{
-    display: flex; 
-    flex-direction: row;
-    align-items: center;
-    padding: 3rem;
-    height: 400px;
- }
-
- .secppal__titulo{
+/*primer elemento seccion principal index**/
+.secppal {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 3rem;
+  height: 400px; }
+  .secppal__titulo {
     font-weight: 700;
     color: black;
     font-size: 2rem;
-    width: 50%;
- }
-
- .secppal__parrafo{
-     padding: 2rem;
+    width: 50%; }
+  .secppal__parrafo {
+    padding: 2rem;
     font-weight: 400;
     text-align: justify;
     color: black;
     font-size: 1.6vw;
-    width: 50%;
- }
+    width: 50%; }
 
- .container1{
-     display: grid;
-     grid-template-columns: 30% 30% 30%;
-     grid-template-areas: "card1 card2 card3";
-     justify-content: space-evenly;
-     align-content: center;
-     align-items: center;
-     margin-top: 10rem;
-     }
-
-.card1{
-    grid-area: card1;
-}
-.card2{
-    grid-area: card2;
-}
-.card3{
-    grid-area: card3;
-}
-
-.container1__card{
+.container1 {
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  grid-template-areas: "card1 card2 card3";
+  justify-content: space-evenly;
+  align-content: center;
+  align-items: center;
+  margin-top: 10rem; }
+  .container1__card {
     display: flex;
     flex-direction: column;
     justify-content: center;
     height: 300px;
     justify-content: space-evenly;
-    transition: all 500ms;
- }
-
- .container1__card:hover{
-     transform: scale(1.1);
- }
-
-.container1__card h2{
+    transition: all 500ms; }
+  .container1__card:hover {
+    transform: scale(1.1); }
+  .container1__card h2 {
     font-size: 2vw;
-     text-align: center;
-     font-weight: 600;
-     padding-bottom: 2rem;
- }
+    text-align: center;
+    font-weight: 600;
+    padding-bottom: 2rem; }
+  .container1__card p {
+    padding-top: 2rem;
+    font-size: 1.2vw; }
 
- .container1__card p{
-     padding-top: 2rem;
-     font-size: 1.2vw;
- }
+.card1 {
+  grid-area: card1; }
 
-  /**segundo elemento seccion principal index**/
+.card2 {
+  grid-area: card2; }
 
-  .container2{
-    height: 1200px;
-    display: flex;
-    flex-direction: column;
-   justify-content: center;
-}
+.card3 {
+  grid-area: card3; }
 
-.container2 h2{
+/**segundo elemento seccion principal index**/
+.container2 {
+  height: 1200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+  .container2 h2 {
     padding: 2rem;
     font-weight: 700;
     color: black;
     font-size: 1.5rem;
-    text-align: center;
-}
+    text-align: center; }
+  .container2 img {
+    display: flex;
+    justify-content: center; }
 
-.container2 img{
-display: flex;
-justify-content: center;
-}
-
-.boton__container{
-    padding: 1.5rem;
-display: flex;
-justify-content: center;
-}
-
-.boton__container button:hover{
+.boton__container {
+  padding: 1.5rem;
+  display: flex;
+  justify-content: center; }
+  .boton__container button:hover {
     box-shadow: 1px 2px 3px 0px gray;
-    background-color: #6e90ad;
-}
-
-.boton__container button{
+    background-color: #6e90ad; }
+  .boton__container button {
     width: 19rem;
     height: 2.6rem;
     border-radius: 0.1rem;
     border-style: none;
-    transition: all 500ms;
-}
-
-.boton__container a{
+    transition: all 500ms; }
+  .boton__container a {
     display: block;
     text-decoration: none;
     color: black;
     font-size: 1rem;
-    font-weight: 600;
-}
+    font-weight: 600; }
+  .boton__container a:hover {
+    color: white; }
 
-.boton__container a:hover{
-    color: white;
-}
-
- /**MOBILE-FIRST INDEX*/
- @media screen and (max-width:600px){
-    .secppal{
-        display: flex; 
-        flex-direction: column;
-        align-items: center;
-        padding: 1rem;
-        height: 200px;
-        text-align: center;
-     }
-
-     .secppal__parrafo{
-        display: none;
-     }
-
-     .secppal__titulo{
-         font-size: 1.5rem;
-         padding: 2rem;
-         width: 100%;
-     }
-
-     .container1{
-        display: grid;
-        grid-template-columns: 90%;
-        grid-template-rows: 470px 470px 470px;
-        grid-template-areas: "card1" 
-                             "card2" 
-                             "card3";
-        justify-content: space-evenly;
-        align-content:space-between;
-        align-items: center;
-        width: 100%;
-        height: 1700px;
-        margin-top: 8rem;
-        }
-    
-        .container2{
-            height: 500px;
-            display: flex;
-            flex-direction: column;
-           justify-content: center;
-        }
-
-        
-         .secppal__parrafo{
-            font-size: 2.5vw; 
-         }
-
-         .container1__card h2{
-            font-size: 3.2vw;  
-         }
-         .container1__card p{
-            font-size: 2vw;
-        }
- }
-
-
- /**seccion Ceos pagina nosotros**/
- 
- .section__ceos{
+/**MOBILE-FIRST INDEX*/
+@media screen and (max-width: 600px) {
+  .secppal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    height: 200px;
+    text-align: center; }
+    .secppal__parrafo {
+      display: none;
+      font-size: 2.5vw; }
+    .secppal__titulo {
+      font-size: 1.5rem;
+      padding: 2rem;
+      width: 100%; }
+  .container1 {
     display: grid;
-    grid-template-columns: 40% 40%;
-    grid-template-areas: 
-    "massimo elena"
-    "kitchen kitchen";
+    grid-template-columns: 90%;
+    grid-template-rows: 470px 470px 470px;
+    grid-template-areas: "card1"  "card2"  "card3";
     justify-content: space-evenly;
-    justify-items: center;
- }
- .massimoBottura{
-     grid-area: massimo;
- }
- .elenaArzak{
-    grid-area: elena;
-}
-.kitchen{
-    grid-area: kitchen;
-}
+    align-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 1700px;
+    margin-top: 8rem; }
+    .container1__card h2 {
+      font-size: 3.2vw; }
+    .container1__card p {
+      font-size: 2vw; }
+  .container2 {
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; } }
 
- .card__ceo{
-     width: 70%;
-     display: flex;
-     flex-direction: column;
-     justify-content: center;
-     text-align: center;
-     transition: all 500ms;
-     padding: 1.5rem;
- }
+/**seccion Ceos pagina nosotros**/
+.section__ceos {
+  display: grid;
+  grid-template-columns: 40% 40%;
+  grid-template-areas: "massimo elena" "kitchen kitchen";
+  justify-content: space-evenly;
+  justify-items: center; }
 
- .card__ceo:hover{
-     background-color: #a7bbcc;
- }
+.massimoBottura {
+  grid-area: massimo; }
 
- .card__ceo p{
-    font-size: 1.4vw;
-}
+.elenaArzak {
+  grid-area: elena; }
 
- .card__ceo h4{
-     padding: 1.5rem;
- }
+.kitchen {
+  grid-area: kitchen; }
 
-    .card__ceo h3{
-        font-size: 2vw;
-        font-weight: 600;
-        padding: 1rem;
-    }
+.card__ceo {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  transition: all 500ms;
+  padding: 1.5rem; }
+  .card__ceo:hover {
+    background-color: #a7bbcc; }
+  .card__ceo p {
+    font-size: 1.4vw; }
+  .card__ceo h4 {
+    padding: 1.5rem; }
+  .card__ceo h3 {
+    font-size: 2vw;
+    font-weight: 600;
+    padding: 1rem; }
 
-    .section__home{
-        width: 90%;
-        height: 750px;
-    }
-   
-    .section__home h2{
-        margin-top: 2rem;
-        font-size: 2.5vw;
-    }
+.section__home {
+  width: 90%;
+  height: 750px; }
+  .section__home h2 {
+    margin-top: 2rem;
+    font-size: 2.5vw; }
+  .section__home p {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    font-size: 1.5 vw; }
 
-    .section__home p{
-        margin-top: 1rem ;
-        margin-bottom: 2rem;
-        font-size: 1.5 vw;
-    }
-
-    /**MOBILE-FIRST NOSOTROS*/
- @media screen and (max-width:600px){
-    .section__ceos{
-        display: grid;
-        grid-template-columns: 90%;
-        grid-template-rows: 700px 700px 800px;
-        grid-template-areas: 
-        "massimo"
-        "elena"
-        "kitchen";
-        justify-content: space-evenly;
-        justify-items: center;
-     }
-     .card__ceo p{
-        font-size: 2vw;
-    }
-    .card__ceo h3{
-        font-size: 3vw;
-    }
-
-    .info__ceo{
-        display: none;
-    }
-     
- }
-
-
-
-    /**seccion servicios paginas servicios**/
-
-    .service__card{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        margin: 2rem;
-        padding: 2rem;
-    }
-    .service__card .card{
-        background-color:#a7bbcc;
-        height: 280px;
-        padding: 1.5rem;
-        transform: translate(2rem);
-    }
-
-    .card__2{
-        height: auto;
-        background-color: #a7bbcc;
-    }
-
-    .service__card img{
-        width: 60%;
-    }
-    .service__card h3{
-        font-size: 2vw;
-        font-weight: 600;
-        text-align: center;
-        padding: 1rem;
-    }
-
-    .service__form{
-        margin-top: 8rem;
-        display: grid;
-    grid-template-columns: 45% 45%;
-    grid-template-areas: 
-    "image form";
+/**MOBILE-FIRST NOSOTROS*/
+@media screen and (max-width: 600px) {
+  .section__ceos {
+    display: grid;
+    grid-template-columns: 90%;
+    grid-template-rows: 700px 700px 800px;
+    grid-template-areas: "massimo" "elena" "kitchen";
     justify-content: space-evenly;
-    animation-name: aparecer;
-    animation-duration: 2s;
-    }
+    justify-items: center; }
+  .card__ceo p {
+    font-size: 2vw; }
+  .card__ceo h3 {
+    font-size: 3vw; }
+  .info__ceo {
+    display: none; } }
 
-    .form__img img{
-        width:100% ;
-    }
+/**seccion servicios paginas servicios**/
+.service__card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 2rem;
+  padding: 2rem; }
+  .service__card .card {
+    background-color: #a7bbcc;
+    height: 280px;
+    padding: 1.5rem;
+    transform: translate(2rem); }
+  .service__card img {
+    width: 60%; }
+  .service__card h3 {
+    font-size: 2vw;
+    font-weight: 600;
+    text-align: center;
+    padding: 1rem; }
 
-    .form__data form{
-        display: flex;
-        flex-direction: column;
-        margin-bottom: 2rem;
-        width: 100%;
-    }
-    .form__data h3{
-        margin-bottom: 1rem;
-        font-size: 2rem;
-    }
+.card__2 {
+  height: auto;
+  background-color: #a7bbcc; }
 
-    .form__data label{
-        margin: 1rem;
-        font-size: 1.1rem;
-    }
+.service__form {
+  margin-top: 8rem;
+  display: grid;
+  grid-template-columns: 45% 45%;
+  grid-template-areas: "image form";
+  justify-content: space-evenly;
+  animation-name: aparecer;
+  animation-duration: 2s; }
 
-    .form__data textarea{
-        margin-bottom: 1rem;
-    }
+.form__img img {
+  width: 100%; }
 
-    .form__data select{
-        font-size: 1.1rem;
-    }
+.form__data form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+  width: 100%; }
 
-    .form__data form input{
-        font-size: 1.5vw;
-    }
+.form__data h3 {
+  margin-bottom: 1rem;
+  font-size: 2rem; }
 
-     /**MOBILE-FIRST SERVICIOS*/
- @media screen and (max-width:600px){
-     .card{
-        margin-top: 2rem;
-     }
+.form__data label {
+  margin: 1rem;
+  font-size: 1.1rem; }
 
-    .service__card{
-        display: flex;
-        flex-direction: column;
-        margin: 2rem;
-        padding: 1rem;
-    }
-    .service__card img{
-        margin-top: 1rem;
-        width: 90%;
-    }
-    .service__card h3{
-        font-size: 4vw;
-        font-weight: 600;
-    }
-    .service__form{
-        display: grid;
+.form__data textarea {
+  margin-bottom: 1rem; }
+
+.form__data select {
+  font-size: 1.1rem; }
+
+.form__data form input {
+  font-size: 1.5vw; }
+
+/**MOBILE-FIRST SERVICIOS*/
+@media screen and (max-width: 600px) {
+  .card {
+    margin-top: 2rem; }
+  .service__card {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem;
+    padding: 1rem; }
+    .service__card img {
+      margin-top: 1rem;
+      width: 90%; }
+    .service__card h3 {
+      font-size: 4vw;
+      font-weight: 600; }
+  .service__form {
+    display: grid;
     grid-template-columns: 90%;
     grid-template-rows: 460px 1700px;
-    grid-template-areas: 
-    "image" 
-    "form";
+    grid-template-areas: "image"  "form";
+    justify-content: space-evenly; }
+  .info__bos {
+    display: none; } }
+
+/**seccion chefs paginas CHEFS**/
+.chefs {
+  display: grid;
+  grid-template-columns: 25% 25% 25%;
+  grid-template-areas: "card1 card2 card3" "card4 card5 card6";
+  padding: 3rem;
+  justify-content: space-evenly; }
+  .chefs__card h3 {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    margin-bottom: 1rem; }
+  .chefs__card {
+    filter: grayscale(1); }
+  .chefs__card:hover {
+    filter: grayscale(0); }
+
+.card1 {
+  grid-area: card1;
+  text-align: center; }
+
+.card2 {
+  grid-area: card2;
+  text-align: center; }
+
+.card3 {
+  grid-area: card3;
+  text-align: center; }
+
+.card4 {
+  grid-area: card4;
+  text-align: center; }
+
+.card5 {
+  grid-area: card5;
+  text-align: center; }
+
+.card6 {
+  grid-area: card6;
+  text-align: center; }
+
+/**MOBILE-FIRST CHEFS*/
+@media screen and (max-width: 600px) {
+  .chefs {
+    display: grid;
+    grid-template-columns: 90%;
+    grid-template-areas: "card1" "card2"  "card3" "card4"  "card5"  "card6";
+    padding: 3rem;
+    justify-content: space-between; }
+    .chefs__card h3 {
+      margin-top: 1rem;
+      margin-bottom: 1rem; }
+  .card {
+    margin-top: 1rem; } }
+
+/**formulario pagina contacto**/
+.sec__contact {
+  display: grid;
+  grid-template-columns: 45% 45%;
+  grid-template-areas: "imagen form";
+  justify-content: space-evenly;
+  margin: 2rem 0rem 2.5rem 0rem; }
+
+.style__card {
+  width: 70%;
+  margin: 2rem 0rem 4rem 4rem; }
+
+.image__form img {
+  width: 100%;
+  animation-name: aparecer;
+  animation-duration: 2s; }
+
+@keyframes aparecer {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+.form__contact form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  font-size: 1.5vw; }
+
+.form__contact {
+  padding: 0rem 2.5rem 0.5rem 2.5rem; }
+
+.form__contact form input {
+  margin-top: 0.8rem;
+  margin-bottom: 0.8rem;
+  font-size: 1.5vw; }
+
+.input {
+  border-style: none;
+  width: 14rem;
+  height: 2.5rem;
+  align-self: center;
+  transition: 500ms;
+  border-radius: 0.3rem; }
+  .input:hover {
+    background-color: #6e90ad;
+    color: beige;
+    cursor: pointer; }
+
+/**MOBILE-FIRST CONTACTO*/
+@media screen and (max-width: 600px) {
+  .sec__contact {
+    display: grid;
+    grid-template-columns: 90%;
+    grid-template-rows: 400px 400px;
+    grid-template-areas: "imagen"  "form";
     justify-content: space-evenly;
-    }
+    margin: 2rem 0rem 2.5rem 0rem; }
+  .jobs {
+    margin-top: 6rem; }
+  .form__contact form input {
+    font-size: 2.5vw; }
+  .form__contact form {
+    font-size: 2.5vw; }
+  .card {
+    width: 80%;
+    text-align: center; } }
 
-    .info__bos{
-        display: none;
-    }
-
- }
-
-
-    /**seccion chefs paginas CHEFS**/
-    .chefs{
-        display: grid;
-        grid-template-columns: 25% 25% 25%;
-        grid-template-areas: 
-        "card1 card2 card3"
-        "card4 card5 card6";
-        padding: 3rem;
-        justify-content: space-evenly;
-    }
-
-    .card1{
-        grid-area: card1;
-        text-align: center;
-    }
-    .card2{
-        grid-area: card2;
-        text-align: center;
-    }
-    .card3{
-        grid-area: card3;
-        text-align: center;
-    }
-    .card4{
-        grid-area: card4;
-        text-align: center;
-    }
-    .card5{
-        grid-area: card5;
-        text-align: center;
-    }
-    .card6{
-        grid-area: card6;
-        text-align: center;
-    }
-
-    .chefs__card h3{
-        margin-top: 1rem;
-        font-size: 1.2rem;
-        margin-bottom: 1rem;
-    }
-
-    .chefs__card{
-        filter: grayscale(1);
-    }
-
-    .chefs__card:hover{
-        filter: grayscale(0);
-    }
-
-    /**MOBILE-FIRST CHEFS*/
- @media screen and (max-width:600px){
-    .chefs{
-        display: grid;
-        grid-template-columns: 90%;
-        grid-template-rows: ;
-        grid-template-areas: 
-        "card1"
-         "card2" 
-         "card3"
-        "card4" 
-        "card5" 
-        "card6";
-        padding: 3rem;
-        justify-content: space-between;
-    }
-    .card{
-       margin-top: 1rem;
-    }
-    .chefs__card h3{
-        margin-top: 1rem;
-        margin-bottom: 1rem;
-    }
-  }
-
-    /**formulario pagina contacto**/
-    .sec__contact{
-        display: grid;
-        grid-template-columns:  45% 45%;
-        grid-template-areas: "imagen form";
-        justify-content: space-evenly;
-        margin: 2rem 0rem 2.5rem 0rem;
-    }
-
-
-   .style__card{
-       width: 60%;
-       margin: 2rem 0rem 4rem 4rem;
-   }
-    
-
-
-    .image__form img{ 
-        width: 100%;
-        animation-name: aparecer;
-        animation-duration: 2s;
-    }
-
-    @keyframes aparecer {
-        0%{
-            opacity: 0;
-        }
-
-        100%{
-            opacity:1;
-        }
-    }
-
-    .form__contact form{
-        display: flex;
-        flex-direction: column;
-        width:100%;
-        font-size: 1.5vw;
-    }
-    .form__contact{
-        padding: 0rem 2.5rem 0.5rem 2.5rem;
-    }
-
-    .form__contact form input{
-        margin-top: 0.8rem;
-        margin-bottom: 0.8rem;
-        font-size: 1.5vw;
-    }
-
-    .input{
-        border-style: none;
-        width: 14rem;
-        height: 2.5rem;
-        align-self: center;
-        transition: 500ms;
-        border-radius: 0.3rem;
-    }
-
-    .input:hover{
-        background-color:#6e90ad;
-        color: beige;
-        cursor: pointer;
-    }
-
-    /**MOBILE-FIRST CONTACTO*/
- @media screen and (max-width:600px){
-    .sec__contact{
-        display: grid;
-        grid-template-columns:  90%;
-        grid-template-rows: 400px 400px;
-        grid-template-areas: "imagen" 
-                              "form";
-        justify-content: space-evenly;
-        margin: 2rem 0rem 2.5rem 0rem;
-    }
-
-   .jobs{
-       margin-top: 6rem;
-   }
-    .form__contact form input{
-        font-size: 2.5vw;
-    }
-    .form__contact form{
-        font-size: 2.5vw;
-    }
-
-    .card{
-        text-align: center;
-    }
- }
-
- /**selectores de elementos en footer**/
-
- .section__footer{
-     display: flex;
-     width: 100%;
- }
- .seccion__jobs{
-     width: 50%;
- }
-
- .seccionFinal{
-     background-color: #18242e;
-     height: 330px;
- }
- 
- .section__footer h3{
-    padding-top: 2rem;
-    color: white;
-    font-size: 1.5vw;
-    text-align: center;
- }
-
-
- .seccion__jobs p{
-    color: white;
-    font-size: 1.2vw;
-    text-align: center;
-    padding-top: 0.5rem;
-    text-align: center;
- }
- 
- .seccion__contacto{
-     width: 50%;
-     
- }
-
- .seccion__contacto ul{
- color: white;
- font-size: 1.2vw;
- text-align: center;
- padding-top: 0.5rem;
- list-style: none;
-}
-
- .textoFooter{
-     color: white;
-     font-size: 1vw;
-     text-align: center;
-     padding-top: 2rem;
-     padding-bottom: 1rem;
- }
-
- /**MOBILE-FIRST FOOTER*/
-
- @media screen and (max-width: 600px){
-    .section__footer{
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-    }
-
-    .seccion__contacto{
-        width: 100%;
-        text-align: center;
-    }
-    .seccion__jobs{
-        width: 100%;
-        text-align: center;
-    }
-    .seccion__jobs p{
-        font-size: 2vw;
-        margin: 0rem 1rem 0rem 1rem;
-    }
-    .seccion__contacto ul{
-        font-size: 2vw; 
- }
- .section__footer h3{
-    font-size: 2.1vw; 
- }
-}
-
+* {
+  font-family: Montserrat; }

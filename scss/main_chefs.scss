@@ -1,0 +1,76 @@
+  /**seccion chefs paginas CHEFS**/
+  .chefs{
+    display: grid;
+    grid-template-columns: 25% 25% 25%;
+    grid-template-areas: 
+    "card1 card2 card3"
+    "card4 card5 card6";
+    padding: 3rem;
+    justify-content: space-evenly;
+
+    &__card h3{
+        margin-top: 1rem;
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+    }
+    
+    &__card{
+        filter: grayscale(1);
+    }
+    
+    &__card:hover{
+        filter: grayscale(0);
+    }
+}
+
+.card1{
+    grid-area: card1;
+    text-align: center;
+}
+.card2{
+    grid-area: card2;
+    text-align: center;
+}
+.card3{
+    grid-area: card3;
+    text-align: center;
+}
+.card4{
+    grid-area: card4;
+    text-align: center;
+}
+.card5{
+    grid-area: card5;
+    text-align: center;
+}
+.card6{
+    grid-area: card6;
+    text-align: center;
+}
+
+
+/**MOBILE-FIRST CHEFS*/
+@media screen and (max-width:600px){
+.chefs{
+    display: grid;
+    grid-template-columns: 90%;
+    grid-template-areas: 
+    "card1"
+     "card2" 
+     "card3"
+    "card4" 
+    "card5" 
+    "card6";
+    padding: 3rem;
+    justify-content: space-between;
+
+    &__card h3{
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+}
+.card{
+   margin-top: 1rem;
+}
+
+}

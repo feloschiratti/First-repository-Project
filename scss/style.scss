@@ -1,0 +1,12 @@
+@import './variables';
+@import './footer.scss';
+@import './header.scss';
+@import './main_index.scss';
+@import './main_nosotros.scss';
+@import './main_servicios.scss';
+@import './main_chefs.scss';
+@import './main_contacto.scss';
+
+*{
+font-family: $general-font;
+}

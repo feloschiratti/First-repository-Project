@@ -1,0 +1,96 @@
+ /**formulario pagina contacto**/
+ .sec__contact{
+    display: grid;
+    grid-template-columns:  45% 45%;
+    grid-template-areas: "imagen form";
+    justify-content: space-evenly;
+    margin: 2rem 0rem 2.5rem 0rem;
+}
+
+
+.style__card{
+   width: 70%;
+   margin: 2rem 0rem 4rem 4rem;
+}
+
+
+
+.image__form img{ 
+    width: 100%;
+    animation-name: aparecer;
+    animation-duration: 2s;
+}
+
+@keyframes aparecer {
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity:1;
+    }
+}
+
+.form__contact form{
+    display: flex;
+    flex-direction: column;
+    width:100%;
+    font-size: 1.5vw;
+}
+.form__contact{
+    padding: 0rem 2.5rem 0.5rem 2.5rem;
+}
+
+.form__contact form input{
+    margin-top: 0.8rem;
+    margin-bottom: 0.8rem;
+    font-size: 1.5vw;
+}
+
+.input{
+    border-style: none;
+    width: 14rem;
+    height: 2.5rem;
+    align-self: center;
+    transition: 500ms;
+    border-radius: 0.3rem;
+
+    &:hover{
+        background-color:#6e90ad;
+        color: beige;
+        cursor: pointer;
+    }
+}
+
+
+
+/**MOBILE-FIRST CONTACTO*/
+@media screen and (max-width:600px){
+.sec__contact{
+    display: grid;
+    grid-template-columns:  90%;
+    grid-template-rows: 400px 400px;
+    grid-template-areas: "imagen" 
+                          "form";
+    justify-content: space-evenly;
+    margin: 2rem 0rem 2.5rem 0rem;
+}
+
+.jobs{
+   
+   margin-top: 6rem;
+}
+.form__contact { 
+& form input{
+    font-size: 2.5vw;
+}
+& form{
+    font-size: 2.5vw;
+}
+}
+
+.card{
+    width: 80%;
+    text-align: center;
+}
+}
