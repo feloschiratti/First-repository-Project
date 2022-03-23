@@ -74,3 +74,10 @@
 }
 
 }
+
+.boton__chef{
+    @extend .boton__container;
+    & button{
+        background-color: rgb(57, 40, 167);
+    }
+}

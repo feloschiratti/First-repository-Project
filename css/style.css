@@ -40,6 +40,9 @@
   padding-top: 2rem;
   padding-bottom: 1rem; }
 
+.boton__footer button:hover {
+  background-color: #3928a7; }
+
 /**MOBILE-FIRST FOOTER*/
 @media screen and (max-width: 600px) {
   .section__footer {
@@ -61,6 +64,16 @@
     font-size: 2.1vw; } }
 
 /**selectores de elementos en header**/
+.fondoSecppal {
+  height: 1000px;
+  background-image: url(../images/transparenciaplato10.png);
+  margin-bottom: 3rem; }
+
+.fondoSecppal2 {
+  height: 900px;
+  background-image: url(../images/transparenciaMassimo.png);
+  margin-bottom: 3rem; }
+
 .font__header {
   font-family: 'Montserrat';
   font-size: 1.5rem;
@@ -72,7 +85,7 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 3rem;
+  padding: 15rem 4rem 2rem 4rem;
   height: 400px; }
   .secppal__titulo {
     font-weight: 700;
@@ -138,30 +151,37 @@
     display: flex;
     justify-content: center; }
 
-.boton__container {
+.boton__container, .boton__footer, .boton__card, .boton__chef {
   padding: 1.5rem;
   display: flex;
   justify-content: center; }
-  .boton__container button:hover {
-    box-shadow: 1px 2px 3px 0px gray;
-    background-color: #6e90ad; }
-  .boton__container button {
+  .boton__container button:hover, .boton__footer button:hover, .boton__card button:hover, .boton__chef button:hover {
+    box-shadow: 1px 2px 3px 0px gray; }
+  .boton__container button, .boton__footer button, .boton__card button, .boton__chef button {
     width: 19rem;
     height: 2.6rem;
     border-radius: 0.1rem;
     border-style: none;
     transition: all 500ms; }
-  .boton__container a {
+  .boton__container a, .boton__footer a, .boton__card a, .boton__chef a {
     display: block;
     text-decoration: none;
     color: black;
     font-size: 1rem;
     font-weight: 600; }
-  .boton__container a:hover {
+  .boton__container a:hover, .boton__footer a:hover, .boton__card a:hover, .boton__chef a:hover {
     color: white; }
+
+.boton__card button {
+  background-color: #6e6c7c; }
+
+.boton__card button:focus {
+  background-color: #361b97; }
 
 /**MOBILE-FIRST INDEX*/
 @media screen and (max-width: 600px) {
+  .back_img {
+    width: 100%; }
   .secppal {
     display: flex;
     flex-direction: column;
@@ -396,6 +416,9 @@
       margin-bottom: 1rem; }
   .card {
     margin-top: 1rem; } }
+
+.boton__chef button {
+  background-color: #3928a7; }
 
 /**formulario pagina contacto**/
 .sec__contact {

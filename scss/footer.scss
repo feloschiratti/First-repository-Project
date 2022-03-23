@@ -50,6 +50,13 @@ list-style: none;
     padding-bottom: 1rem;
 }
 
+.boton__footer{
+    @extend .boton__container;
+    & button:hover{
+        background-color: rgb(57, 40, 167);
+    }
+}
+
 /**MOBILE-FIRST FOOTER*/
 
 @media screen and (max-width: 600px){

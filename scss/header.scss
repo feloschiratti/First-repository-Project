@@ -1,8 +1,25 @@
 /**selectores de elementos en header**/
 
+@mixin fondoppal ( $imageFondo , $imagenLargo){
+height: $imagenLargo;
+background-image: $imageFondo;
+margin-bottom: 3rem; 
+}
+
+.fondoSecppal{
+    @include fondoppal( url(../images/transparenciaplato10.png) , 1000px);
+}
+
+.fondoSecppal2{
+    @include fondoppal( url(../images/transparenciaMassimo.png) , 900px);
+}
+
+
+
 .font__header{
     font-family: 'Montserrat';
     font-size: 1.5rem;
    padding: 0rem 1rem 0rem 1rem;
    font-weight: 500;
 }
+

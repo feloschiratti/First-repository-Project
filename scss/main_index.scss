@@ -1,10 +1,11 @@
  /*primer elemento seccion principal index**/
 
+ 
  .secppal{
     display: flex; 
     flex-direction: row;
     align-items: center;
-    padding: 3rem;
+    padding: 15rem 4rem 2rem 4rem;
     height: 400px;
 
     &__titulo{
@@ -94,7 +95,6 @@ justify-content: center;
 
 & button:hover{
     box-shadow: 1px 2px 3px 0px gray;
-    background-color: #6e90ad;
 }
 & button{
     width: 19rem;
@@ -116,9 +116,24 @@ justify-content: center;
 
 }
 
+.boton__card{
+    @extend .boton__container;
+    & button{
+        background-color: rgb(110, 108, 124);
+    }
+    & button:focus{
+        background-color: rgb(54, 27, 151);
+    }
+    
+}
+
 
  /**MOBILE-FIRST INDEX*/
  @media screen and (max-width:600px){
+    .back_img{
+        width: 100%;
+    }
+
     .secppal{
         display: flex; 
         flex-direction: column;
