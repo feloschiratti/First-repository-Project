@@ -80,6 +80,17 @@
   padding: 0rem 1rem 0rem 1rem;
   font-weight: 500; }
 
+/**MOBILE-FIRST CHEFS*/
+@media screen and (max-width: 600px) {
+  .fondoSecppal {
+    height: 500px;
+    background-image: none;
+    margin-bottom: 3rem; }
+  .fondoSecppal2 {
+    height: 500px;
+    background-image: none;
+    margin-bottom: 3rem; } }
+
 /*primer elemento seccion principal index**/
 .secppal {
   display: flex;
@@ -112,11 +123,10 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 300px;
-    justify-content: space-evenly;
-    transition: all 500ms; }
-  .container1__card:hover {
-    transform: scale(1.1); }
+    height: 600px;
+    justify-content: space-evenly; }
+    .container1__card:hover {
+      background-color: #a7bbcc; }
   .container1__card h2 {
     font-size: 2vw;
     text-align: center;

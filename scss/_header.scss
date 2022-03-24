@@ -23,3 +23,14 @@ margin-bottom: 3rem;
    font-weight: 500;
 }
 
+/**MOBILE-FIRST CHEFS*/
+@media screen and (max-width:600px){
+    .fondoSecppal{
+        @include fondoppal( none, 500px);
+    }
+
+    .fondoSecppal2{
+        @include fondoppal( none , 500px);
+    }
+}
+
