@@ -17,7 +17,7 @@
         width: 60%;
     }
     & h3{
-        font-size: 2vw;
+        font-size: 1.5rem;
         font-weight: 600;
         text-align: center;
         padding: 1rem;
@@ -43,6 +43,7 @@ animation-duration: 2s;
 
 .form__img img{
     width:100% ;
+    margin-bottom: 1rem;
 }
 
 .form__data{
@@ -70,15 +71,27 @@ animation-duration: 2s;
     }
     
     & form input{
-        font-size: 1.5vw;
+        font-size: 1.2rem;
     }
 }
 
+/**MD SERVICIOS**/
+@media screen and (max-width:992px){
+    .service__card{
+        display: flex;
+        flex-direction: column;
+        & .card{
+            height: auto;
+            margin-bottom: 2rem;
+            transform: translate(0rem);
+        }
+}
+ }
 
- /**MOBILE-FIRST SERVICIOS*/
+ /**XS SERVICIOS*/
 @media screen and (max-width:600px){
  .card{
-    margin-top: 2rem;
+    margin-top: 1rem;
  }
 
 .service__card{
@@ -89,10 +102,11 @@ animation-duration: 2s;
 
     & img{
         margin-top: 1rem;
+        margin-bottom: 2rem;
         width: 90%;
     }
     & h3{
-        font-size: 4vw;
+        font-size: 1rem;
         font-weight: 600;
     }
 }
@@ -100,10 +114,10 @@ animation-duration: 2s;
 .service__form{
     display: grid;
 grid-template-columns: 90%;
-grid-template-rows: 460px 1700px;
+grid-template-rows: auto auto;
 grid-template-areas: 
-"image" 
-"form";
+"form"
+"image";
 justify-content: space-evenly;
 }
 

@@ -3,15 +3,73 @@
 @mixin fondoppal ( $imageFondo , $imagenLargo){
 height: $imagenLargo;
 background-image: $imageFondo;
-margin-bottom: 3rem; 
+margin-bottom: 0rem; 
+animation-name: aparecer;
+animation-duration: 800ms;
 }
 
+@mixin secppal ($paddingSecppal , $direccion , $anchoH1 , $anchoP ){
+    display: flex; 
+    flex-direction: $direccion;
+    align-items: flex-start;
+    padding: $paddingSecppal;
+    height: auto;
+
+     h1{
+        font-weight: 700;
+        color: black;
+        font-size: 2rem;
+        width: $anchoH1;
+    }
+     p{
+        font-weight: 400;
+        color: black;
+        font-size: 1.3rem;
+        width: $anchoP;
+    }
+ }
+
+ .secppal1{
+     @include secppal (8rem 4rem 2rem 4rem , row , 45% , 55%);
+
+     p{
+         padding-left: 2rem;
+     }
+     
+ }
+
+.secppal2{
+    @include secppal (7rem 4rem 2rem 4rem , row , 50% , 50%);
+    p{
+        padding-left:2rem;
+    }
+    
+}
+
+.secppal3{
+    @include secppal (5rem 4rem 2rem 4rem , column , 100% , 100%);
+    text-align: center;
+    h1{
+        padding: 0rem 6rem 0rem 6rem;
+    }
+    p{
+        padding: 3rem 10rem 0rem 10rem;
+    }
+    
+}
+
+
 .fondoSecppal{
-    @include fondoppal( url(../images/transparenciaplato10.png) , 1000px);
+    @include fondoppal( url(../images/transparenciaplato10.png) , 800px);
 }
 
 .fondoSecppal2{
-    @include fondoppal( url(../images/transparenciaMassimo.png) , 900px);
+    @include fondoppal( url(../images/transparenciaMassimo.png) , 800px);
+}
+
+.fondoSecppal3{
+    @include fondoppal( none, 750px )
+    background-color: $color-two;
 }
 
 
@@ -23,14 +81,90 @@ margin-bottom: 3rem;
    font-weight: 500;
 }
 
-/**MOBILE-FIRST CHEFS*/
+
+/**MD HEADER**/
+@media screen and (max-width:992px){
+    .secppal3{
+        @include secppal (5rem 4rem 2rem 4rem , column , 100% , 100%);
+        text-align: center;
+        h1{
+            font-size: 1.5rem;
+            padding: 0rem 6rem 0rem 6rem;
+        }
+        p{
+           display: none;
+        }
+        
+    }
+
+    .secppal2{
+        @include secppal (7rem 4rem 2rem 4rem , row , 100% , 0%);
+        h1{
+        font-size: 1.5rem;
+        text-align: center;
+        }
+        p{
+            display: none;
+        }
+        
+    }
+
+    .secppal1{
+        @include secppal (6.5rem 2rem 2rem 4rem , row , 90% , 0%);
+        justify-content: center;
+        h1{
+            text-align: center;
+        }
+        p{
+            display: none;
+        }
+        
+    }
+
+    .fondoSecppal3{
+        @include fondoppal( none, auto)
+    }
+}
+
+/**XS HEADER*/
 @media screen and (max-width:600px){
     .fondoSecppal{
-        @include fondoppal( none, 500px);
+        @include fondoppal( none, auto);
+        background-color: $color-two;
     }
 
     .fondoSecppal2{
-        @include fondoppal( none , 500px);
+        @include fondoppal( none , auto);
+        background-color: $color-two;
+    }
+
+    .secppal1{
+        @include secppal (3rem 4rem 2rem 2rem , row , 90% , 0%);
+        h1{
+            font-size: 1.3rem;
+            text-align: center;
+        }
+        
+    }
+
+    .secppal2{
+        @include secppal (2rem 4rem 2rem 4rem , row , 100% , 0%);
+        h1{
+            font-size: 1.2rem;
+            }
+    }
+
+    .secppal3{
+        @include secppal (0rem 2rem 2rem 1rem , column , 100% , 0%);
+        text-align: center;
+        h1{
+            font-size: 1.1rem;
+            padding: 0rem 2rem 0rem 2rem;
+        }
+        p{
+           display: none;
+        }
+        
     }
 }
 

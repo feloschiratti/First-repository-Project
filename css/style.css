@@ -1,3 +1,27 @@
+/*Extend de Boton*/
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css");
+.boton__container, .boton__footer, .boton__card, .boton__chef {
+  display: flex;
+  justify-content: center; }
+  .boton__container button, .boton__footer button, .boton__card button, .boton__chef button {
+    width: 19rem;
+    height: 2.6rem;
+    border-radius: 0.3rem;
+    border-style: none;
+    transition: all 500ms; }
+  .boton__container button:hover, .boton__footer button:hover, .boton__card button:hover, .boton__chef button:hover {
+    box-shadow: 1px 2px 3px 0px #c0bebe;
+    background-color: white;
+    border: 2px solid #797c92; }
+  .boton__container a, .boton__footer a, .boton__card a, .boton__chef a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    font-size: 1rem;
+    font-weight: 600; }
+  .boton__container a:hover, .boton__footer a:hover, .boton__card a:hover, .boton__chef a:hover {
+    color: #383838; }
+
 /**selectores de elementos en footer**/
 .section__footer {
   display: flex;
@@ -8,19 +32,19 @@
 
 .seccionFinal {
   background-color: #18242e;
-  height: 330px; }
+  height: 400px; }
 
 .section__footer h3 {
   padding-top: 2rem;
   color: white;
-  font-size: 1.5vw;
+  font-size: 1.1rem;
   text-align: center; }
 
 .seccion__jobs p {
   color: white;
-  font-size: 1.2vw;
+  font-size: 1rem;
   text-align: center;
-  padding-top: 0.5rem;
+  padding: 1rem 1rem 0rem 2rem;
   text-align: center; }
 
 .seccion__contacto {
@@ -28,51 +52,141 @@
 
 .seccion__contacto ul {
   color: white;
-  font-size: 1.2vw;
+  font-size: 1rem;
   text-align: center;
   padding-top: 0.5rem;
   list-style: none; }
 
 .textoFooter {
   color: white;
-  font-size: 1vw;
+  font-size: 1rem;
   text-align: center;
-  padding-top: 2rem;
-  padding-bottom: 1rem; }
+  padding-top: 2rem; }
 
-.boton__footer button:hover {
-  background-color: #3928a7; }
+.boton__footer {
+  margin-top: 2rem; }
+  .boton__footer button {
+    background-color: #797c92; }
+  .boton__footer button:hover {
+    background-color: white;
+    box-shadow: none; }
 
-/**MOBILE-FIRST FOOTER*/
+.socials {
+  text-align: center; }
+
+.bi {
+  font-size: 1.5rem;
+  color: white; }
+
+/**MD FOOTER*/
+@media screen and (max-width: 992px) {
+  .seccionFinal {
+    height: auto; }
+    .seccionFinal .section__footer {
+      display: flex;
+      flex-direction: column;
+      width: 100%; }
+    .seccionFinal .seccion__contacto {
+      width: 100%;
+      text-align: center; }
+    .seccionFinal .seccion__jobs {
+      width: 100%;
+      text-align: center; }
+    .seccionFinal .socials {
+      padding-bottom: 2rem; } }
+
+/**XS FOOTER*/
 @media screen and (max-width: 600px) {
-  .section__footer {
-    display: flex;
-    flex-direction: column;
-    width: 100%; }
-  .seccion__contacto {
-    width: 100%;
-    text-align: center; }
-  .seccion__jobs {
-    width: 100%;
-    text-align: center; }
-  .seccion__jobs p {
-    font-size: 2vw;
+  .seccionFinal .seccion__jobs p {
+    font-size: 1rem;
     margin: 0rem 1rem 0rem 1rem; }
-  .seccion__contacto ul {
-    font-size: 2vw; }
-  .section__footer h3 {
-    font-size: 2.1vw; } }
+  .seccionFinal .seccion__contacto ul {
+    font-size: 1rem; }
+  .seccionFinal .section__footer h3 {
+    font-size: 1.3rem; } }
 
 /**selectores de elementos en header**/
+.secppal1 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 8rem 4rem 2rem 4rem;
+  height: auto; }
+  .secppal1 h1 {
+    font-weight: 700;
+    color: black;
+    font-size: 2rem;
+    width: 45%; }
+  .secppal1 p {
+    font-weight: 400;
+    color: black;
+    font-size: 1.3rem;
+    width: 55%; }
+  .secppal1 p {
+    padding-left: 2rem; }
+
+.secppal2 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 7rem 4rem 2rem 4rem;
+  height: auto; }
+  .secppal2 h1 {
+    font-weight: 700;
+    color: black;
+    font-size: 2rem;
+    width: 50%; }
+  .secppal2 p {
+    font-weight: 400;
+    color: black;
+    font-size: 1.3rem;
+    width: 50%; }
+  .secppal2 p {
+    padding-left: 2rem; }
+
+.secppal3 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 5rem 4rem 2rem 4rem;
+  height: auto;
+  text-align: center; }
+  .secppal3 h1 {
+    font-weight: 700;
+    color: black;
+    font-size: 2rem;
+    width: 100%; }
+  .secppal3 p {
+    font-weight: 400;
+    color: black;
+    font-size: 1.3rem;
+    width: 100%; }
+  .secppal3 h1 {
+    padding: 0rem 6rem 0rem 6rem; }
+  .secppal3 p {
+    padding: 3rem 10rem 0rem 10rem; }
+
 .fondoSecppal {
-  height: 1000px;
+  height: 800px;
   background-image: url(../images/transparenciaplato10.png);
-  margin-bottom: 3rem; }
+  margin-bottom: 0rem;
+  animation-name: aparecer;
+  animation-duration: 800ms; }
 
 .fondoSecppal2 {
-  height: 900px;
+  height: 800px;
   background-image: url(../images/transparenciaMassimo.png);
-  margin-bottom: 3rem; }
+  margin-bottom: 0rem;
+  animation-name: aparecer;
+  animation-duration: 800ms; }
+
+.fondoSecppal3 {
+  height: 750px;
+  background-image: none;
+  margin-bottom: 0rem;
+  animation-name: aparecer;
+  animation-duration: 800ms;
+  background-color: #b4d1bc; }
 
 .font__header {
   font-family: 'Montserrat';
@@ -80,37 +194,156 @@
   padding: 0rem 1rem 0rem 1rem;
   font-weight: 500; }
 
-/**MOBILE-FIRST CHEFS*/
+/**MD HEADER**/
+@media screen and (max-width: 992px) {
+  .secppal3 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 5rem 4rem 2rem 4rem;
+    height: auto;
+    text-align: center; }
+    .secppal3 h1 {
+      font-weight: 700;
+      color: black;
+      font-size: 2rem;
+      width: 100%; }
+    .secppal3 p {
+      font-weight: 400;
+      color: black;
+      font-size: 1.3rem;
+      width: 100%; }
+    .secppal3 h1 {
+      font-size: 1.5rem;
+      padding: 0rem 6rem 0rem 6rem; }
+    .secppal3 p {
+      display: none; }
+  .secppal2 {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 7rem 4rem 2rem 4rem;
+    height: auto; }
+    .secppal2 h1 {
+      font-weight: 700;
+      color: black;
+      font-size: 2rem;
+      width: 100%; }
+    .secppal2 p {
+      font-weight: 400;
+      color: black;
+      font-size: 1.3rem;
+      width: 0%; }
+    .secppal2 h1 {
+      font-size: 1.5rem;
+      text-align: center; }
+    .secppal2 p {
+      display: none; }
+  .secppal1 {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 6.5rem 2rem 2rem 4rem;
+    height: auto;
+    justify-content: center; }
+    .secppal1 h1 {
+      font-weight: 700;
+      color: black;
+      font-size: 2rem;
+      width: 90%; }
+    .secppal1 p {
+      font-weight: 400;
+      color: black;
+      font-size: 1.3rem;
+      width: 0%; }
+    .secppal1 h1 {
+      text-align: center; }
+    .secppal1 p {
+      display: none; }
+  .fondoSecppal3 {
+    height: auto;
+    background-image: none;
+    margin-bottom: 0rem;
+    animation-name: aparecer;
+    animation-duration: 800ms; } }
+
+/**XS HEADER*/
 @media screen and (max-width: 600px) {
   .fondoSecppal {
-    height: 500px;
+    height: auto;
     background-image: none;
-    margin-bottom: 3rem; }
+    margin-bottom: 0rem;
+    animation-name: aparecer;
+    animation-duration: 800ms;
+    background-color: #b4d1bc; }
   .fondoSecppal2 {
-    height: 500px;
+    height: auto;
     background-image: none;
-    margin-bottom: 3rem; } }
+    margin-bottom: 0rem;
+    animation-name: aparecer;
+    animation-duration: 800ms;
+    background-color: #b4d1bc; }
+  .secppal1 {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 3rem 4rem 2rem 2rem;
+    height: auto; }
+    .secppal1 h1 {
+      font-weight: 700;
+      color: black;
+      font-size: 2rem;
+      width: 90%; }
+    .secppal1 p {
+      font-weight: 400;
+      color: black;
+      font-size: 1.3rem;
+      width: 0%; }
+    .secppal1 h1 {
+      font-size: 1.3rem;
+      text-align: center; }
+  .secppal2 {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 2rem 4rem 2rem 4rem;
+    height: auto; }
+    .secppal2 h1 {
+      font-weight: 700;
+      color: black;
+      font-size: 2rem;
+      width: 100%; }
+    .secppal2 p {
+      font-weight: 400;
+      color: black;
+      font-size: 1.3rem;
+      width: 0%; }
+    .secppal2 h1 {
+      font-size: 1.2rem; }
+  .secppal3 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0rem 2rem 2rem 1rem;
+    height: auto;
+    text-align: center; }
+    .secppal3 h1 {
+      font-weight: 700;
+      color: black;
+      font-size: 2rem;
+      width: 100%; }
+    .secppal3 p {
+      font-weight: 400;
+      color: black;
+      font-size: 1.3rem;
+      width: 0%; }
+    .secppal3 h1 {
+      font-size: 1.1rem;
+      padding: 0rem 2rem 0rem 2rem; }
+    .secppal3 p {
+      display: none; } }
 
 /*primer elemento seccion principal index**/
-.secppal {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 15rem 4rem 2rem 4rem;
-  height: 400px; }
-  .secppal__titulo {
-    font-weight: 700;
-    color: black;
-    font-size: 2rem;
-    width: 50%; }
-  .secppal__parrafo {
-    padding: 2rem;
-    font-weight: 400;
-    text-align: justify;
-    color: black;
-    font-size: 1.6vw;
-    width: 50%; }
-
 .container1 {
   display: grid;
   grid-template-columns: 30% 30% 30%;
@@ -118,23 +351,29 @@
   justify-content: space-evenly;
   align-content: center;
   align-items: center;
-  margin-top: 10rem; }
+  height: 700px; }
   .container1__card {
     display: flex;
     flex-direction: column;
     justify-content: center;
     height: 600px;
-    justify-content: space-evenly; }
+    justify-content: space-evenly;
+    transition: all 500ms; }
     .container1__card:hover {
-      background-color: #a7bbcc; }
+      background-color: #b4d1bc; }
+    .container1__card img {
+      align-self: center;
+      width: 350px;
+      height: 246px; }
   .container1__card h2 {
-    font-size: 2vw;
+    font-size: 1.7rem;
     text-align: center;
     font-weight: 600;
-    padding-bottom: 2rem; }
+    padding-bottom: 1rem;
+    margin-top: 3rem; }
   .container1__card p {
-    padding-top: 2rem;
-    font-size: 1.2vw; }
+    padding: 1.5rem 1.5rem 0rem 1.5rem;
+    font-size: 1rem; }
 
 .card1 {
   grid-area: card1; }
@@ -147,46 +386,60 @@
 
 /**segundo elemento seccion principal index**/
 .container2 {
-  height: 1200px;
-  display: flex;
+  height: auto;
+  width: 100%;
+  display: flex !important;
   flex-direction: column;
-  justify-content: center; }
+  justify-content: center;
+  background-color: #D5DBED;
+  padding-bottom: 4rem; }
   .container2 h2 {
     padding: 2rem;
     font-weight: 700;
     color: black;
     font-size: 1.5rem;
     text-align: center; }
-  .container2 img {
+  .container2__carousel {
     display: flex;
-    justify-content: center; }
-
-.boton__container, .boton__footer, .boton__card, .boton__chef {
-  padding: 1.5rem;
-  display: flex;
-  justify-content: center; }
-  .boton__container button:hover, .boton__footer button:hover, .boton__card button:hover, .boton__chef button:hover {
-    box-shadow: 1px 2px 3px 0px gray; }
-  .boton__container button, .boton__footer button, .boton__card button, .boton__chef button {
-    width: 19rem;
-    height: 2.6rem;
-    border-radius: 0.1rem;
-    border-style: none;
-    transition: all 500ms; }
-  .boton__container a, .boton__footer a, .boton__card a, .boton__chef a {
-    display: block;
-    text-decoration: none;
-    color: black;
-    font-size: 1rem;
-    font-weight: 600; }
-  .boton__container a:hover, .boton__footer a:hover, .boton__card a:hover, .boton__chef a:hover {
-    color: white; }
+    align-self: center;
+    width: 80%; }
 
 .boton__card button {
-  background-color: #6e6c7c; }
+  background-color: #797c92; }
 
-.boton__card button:focus {
-  background-color: #361b97; }
+/**Estilos Carousel**/
+.carousel__subtitles h5 {
+  background-color: rgba(233, 229, 229, 0.3);
+  width: 35rem;
+  color: black;
+  text-shadow: 1px 1px 2px #999898;
+  margin: 0 auto;
+  padding-top: 0.4rem; }
+
+.carousel__subtitles p {
+  background-color: rgba(233, 229, 229, 0.3);
+  width: 35rem;
+  color: black;
+  font-weight: 400;
+  text-shadow: 1px 1px 2px #999898;
+  margin: 0 auto;
+  padding-bottom: 0.3rem; }
+
+/**MD index**/
+@media screen and (max-width: 992px) {
+  .container1 {
+    display: grid;
+    grid-template-columns: 70%;
+    grid-template-areas: "card1"  "card2"  "card3";
+    justify-content: space-evenly;
+    align-content: center;
+    align-items: center;
+    height: auto;
+    margin-top: 3rem 0rem 0rem 2rem; }
+  .carousel__subtitles h5 {
+    display: none; }
+  .carousel__subtitles p {
+    display: none; } }
 
 /**MOBILE-FIRST INDEX*/
 @media screen and (max-width: 600px) {
@@ -209,37 +462,42 @@
   .container1 {
     display: grid;
     grid-template-columns: 90%;
-    grid-template-rows: 470px 470px 470px;
+    grid-template-rows: auto auto auto;
     grid-template-areas: "card1"  "card2"  "card3";
     justify-content: space-evenly;
     align-content: space-between;
     align-items: center;
     width: 100%;
-    height: 1700px;
+    height: auto;
     margin-top: 8rem; }
     .container1__card h2 {
-      font-size: 3.2vw; }
+      font-size: 1rem; }
     .container1__card p {
-      font-size: 2vw; }
+      font-size: 1rem; }
   .container2 {
-    height: 500px;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: center; } }
 
 /**seccion Ceos pagina nosotros**/
 .section__ceos {
+  width: 100%;
   display: grid;
   grid-template-columns: 40% 40%;
   grid-template-areas: "massimo elena" "kitchen kitchen";
   justify-content: space-evenly;
-  justify-items: center; }
+  justify-items: center;
+  margin-top: 4rem;
+  height: auto; }
 
 .massimoBottura {
-  grid-area: massimo; }
+  grid-area: massimo;
+  height: auto; }
 
 .elenaArzak {
-  grid-area: elena; }
+  grid-area: elena;
+  height: auto; }
 
 .kitchen {
   grid-area: kitchen; }
@@ -251,44 +509,89 @@
   justify-content: center;
   text-align: center;
   transition: all 500ms;
-  padding: 1.5rem; }
+  padding: 1.5rem;
+  height: auto;
+  margin-bottom: 2rem; }
   .card__ceo:hover {
-    background-color: #a7bbcc; }
+    background-color: #D5DBED; }
   .card__ceo p {
-    font-size: 1.4vw; }
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem; }
   .card__ceo h4 {
     padding: 1.5rem; }
   .card__ceo h3 {
-    font-size: 2vw;
+    font-size: 1.5rem;
     font-weight: 600;
     padding: 1rem; }
+  .card__ceo .boton__leer {
+    text-decoration: none;
+    color: black;
+    background-color: #a8a7a7;
+    padding: 0.5rem;
+    font-size: 1rem; }
+    .card__ceo .boton__leer:hover {
+      border: 1px solid #8d8d8d;
+      box-shadow: 1px 1px 1px 0px #bbbaba; }
 
 .section__home {
-  width: 90%;
-  height: 750px; }
-  .section__home h2 {
-    margin-top: 2rem;
-    font-size: 2.5vw; }
-  .section__home p {
-    margin-top: 1rem;
-    margin-bottom: 2rem;
-    font-size: 1.5 vw; }
+  display: flex;
+  align-items: center;
+  margin-bottom: 3rem;
+  width: 100%; }
+  .section__home .text {
+    background-color: #D5DBED;
+    transform: translate(4.5rem);
+    width: 550px;
+    height: auto;
+    padding: 0rem 2.5rem 0rem 2.5rem;
+    width: 100%;
+    margin-bottom: 1rem; }
+    .section__home .text .home__img {
+      max-width: 100%; }
+      .section__home .text .home__img img {
+        width: 100%; }
+    .section__home .text h2 {
+      text-align: center;
+      margin-top: 2rem;
+      font-size: 1.2rem; }
+    .section__home .text p {
+      margin-top: 1rem;
+      margin-bottom: 2rem;
+      font-size: 1.1rem; }
 
-/**MOBILE-FIRST NOSOTROS*/
-@media screen and (max-width: 600px) {
+/*MD nosotros*/
+@media screen and (max-width: 992px) {
   .section__ceos {
     display: grid;
     grid-template-columns: 90%;
-    grid-template-rows: 700px 700px 800px;
     grid-template-areas: "massimo" "elena" "kitchen";
     justify-content: space-evenly;
-    justify-items: center; }
-  .card__ceo p {
-    font-size: 2vw; }
-  .card__ceo h3 {
-    font-size: 3vw; }
-  .info__ceo {
-    display: none; } }
+    justify-items: center;
+    height: auto; }
+    .section__ceos .section__home {
+      display: flex;
+      flex-direction: column; }
+      .section__ceos .section__home .text {
+        transform: translate(0rem); }
+    .section__ceos .card__ceo p {
+      font-size: 1rem; }
+    .section__ceos .card__ceo h3 {
+      font-size: 1rem; }
+    .section__ceos .info__ceo {
+      display: none; }
+    .section__ceos .home__img {
+      max-width: 100%; }
+      .section__ceos .home__img img {
+        width: 100%; } }
+
+/**XS NOSOTROS*/
+@media screen and (max-width: 600px) {
+  .section__ceos {
+    grid-template-columns: 100%; }
+    .section__ceos .card__ceo p {
+      font-size: 0.8rem; }
+  .section__home .text p {
+    font-size: 0.9rem; } }
 
 /**seccion servicios paginas servicios**/
 .service__card {
@@ -298,21 +601,21 @@
   margin: 2rem;
   padding: 2rem; }
   .service__card .card {
-    background-color: #a7bbcc;
+    background-color: #D5DBED;
     height: 280px;
     padding: 1.5rem;
     transform: translate(2rem); }
   .service__card img {
     width: 60%; }
   .service__card h3 {
-    font-size: 2vw;
+    font-size: 1.5rem;
     font-weight: 600;
     text-align: center;
     padding: 1rem; }
 
 .card__2 {
   height: auto;
-  background-color: #a7bbcc; }
+  background-color: #D5DBED; }
 
 .service__form {
   margin-top: 8rem;
@@ -324,7 +627,8 @@
   animation-duration: 2s; }
 
 .form__img img {
-  width: 100%; }
+  width: 100%;
+  margin-bottom: 1rem; }
 
 .form__data form {
   display: flex;
@@ -347,12 +651,22 @@
   font-size: 1.1rem; }
 
 .form__data form input {
-  font-size: 1.5vw; }
+  font-size: 1.2rem; }
 
-/**MOBILE-FIRST SERVICIOS*/
+/**MD SERVICIOS**/
+@media screen and (max-width: 992px) {
+  .service__card {
+    display: flex;
+    flex-direction: column; }
+    .service__card .card {
+      height: auto;
+      margin-bottom: 2rem;
+      transform: translate(0rem); } }
+
+/**XS SERVICIOS*/
 @media screen and (max-width: 600px) {
   .card {
-    margin-top: 2rem; }
+    margin-top: 1rem; }
   .service__card {
     display: flex;
     flex-direction: column;
@@ -360,15 +674,16 @@
     padding: 1rem; }
     .service__card img {
       margin-top: 1rem;
+      margin-bottom: 2rem;
       width: 90%; }
     .service__card h3 {
-      font-size: 4vw;
+      font-size: 1rem;
       font-weight: 600; }
   .service__form {
     display: grid;
     grid-template-columns: 90%;
-    grid-template-rows: 460px 1700px;
-    grid-template-areas: "image"  "form";
+    grid-template-rows: auto auto;
+    grid-template-areas: "form" "image";
     justify-content: space-evenly; }
   .info__bos {
     display: none; } }
@@ -379,13 +694,16 @@
   grid-template-columns: 25% 25% 25%;
   grid-template-areas: "card1 card2 card3" "card4 card5 card6";
   padding: 3rem;
-  justify-content: space-evenly; }
+  justify-content: space-evenly;
+  animation-name: aparecer;
+  animation-duration: 1s; }
   .chefs__card h3 {
     margin-top: 1rem;
     font-size: 1.2rem;
     margin-bottom: 1rem; }
   .chefs__card {
-    filter: grayscale(1); }
+    filter: grayscale(1);
+    margin-bottom: 2rem; }
   .chefs__card:hover {
     filter: grayscale(0); }
 
@@ -413,7 +731,16 @@
   grid-area: card6;
   text-align: center; }
 
-/**MOBILE-FIRST CHEFS*/
+/**MD CHEFS*/
+@media screen and (max-width: 1100px) {
+  .chefs {
+    display: grid;
+    grid-template-columns: 45% 45%;
+    grid-template-areas: "card1 card2 " "card3 card4" "card5  card6";
+    padding: 1rem;
+    justify-content: space-between; } }
+
+/**XS CHEFS*/
 @media screen and (max-width: 600px) {
   .chefs {
     display: grid;
@@ -428,24 +755,52 @@
     margin-top: 1rem; } }
 
 .boton__chef button {
-  background-color: #3928a7; }
+  background-color: #797c92; }
 
 /**formulario pagina contacto**/
 .sec__contact {
   display: grid;
   grid-template-columns: 45% 45%;
-  grid-template-areas: "imagen form";
+  grid-template-areas: "imagen form" "team  jobs";
   justify-content: space-evenly;
   margin: 2rem 0rem 2.5rem 0rem; }
-
-.style__card {
-  width: 70%;
-  margin: 2rem 0rem 4rem 4rem; }
-
-.image__form img {
-  width: 100%;
-  animation-name: aparecer;
-  animation-duration: 2s; }
+  .sec__contact .form__contact form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    font-size: 1rem; }
+  .sec__contact .form__contact {
+    padding: 0rem 2.5rem 0.5rem 2.5rem; }
+  .sec__contact .form__contact form input {
+    margin-top: 0.8rem;
+    margin-bottom: 0.8rem;
+    font-size: 1rem; }
+  .sec__contact .input {
+    border-style: none;
+    width: 14rem;
+    height: 2.5rem;
+    align-self: center;
+    transition: 500ms;
+    border-radius: 0.3rem; }
+    .sec__contact .input:hover {
+      background-color: #6e90ad;
+      color: beige;
+      cursor: pointer; }
+  .sec__contact .image__form img {
+    width: 100%;
+    animation-name: aparecer;
+    animation-duration: 2s; }
+  .sec__contact .team {
+    padding-top: 6rem;
+    animation-name: aparecer;
+    animation-duration: 2s; }
+    .sec__contact .team img {
+      width: 100%; }
+  .sec__contact .jobs {
+    padding-top: 6rem;
+    margin-bottom: 2rem; }
+    .sec__contact .jobs .form-cv {
+      border-style: none; }
 
 @keyframes aparecer {
   0% {
@@ -453,50 +808,36 @@
   100% {
     opacity: 1; } }
 
-.form__contact form {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  font-size: 1.5vw; }
-
-.form__contact {
-  padding: 0rem 2.5rem 0.5rem 2.5rem; }
-
-.form__contact form input {
-  margin-top: 0.8rem;
-  margin-bottom: 0.8rem;
-  font-size: 1.5vw; }
-
-.input {
-  border-style: none;
-  width: 14rem;
-  height: 2.5rem;
-  align-self: center;
-  transition: 500ms;
-  border-radius: 0.3rem; }
-  .input:hover {
-    background-color: #6e90ad;
-    color: beige;
-    cursor: pointer; }
-
-/**MOBILE-FIRST CONTACTO*/
+/* XS CONTACTO*/
 @media screen and (max-width: 600px) {
   .sec__contact {
     display: grid;
+    grid-template-columns: 100%;
+    grid-template-areas: "imagen"  "form" "team" "jobs"; }
+    .sec__contact .form__contact {
+      padding-top: 3rem; }
+    .sec__contact .jobs {
+      padding: 0; } }
+
+/**MD CONTACTO**/
+@media screen and (max-width: 992px) {
+  .sec__contact {
+    display: grid;
     grid-template-columns: 90%;
-    grid-template-rows: 400px 400px;
-    grid-template-areas: "imagen"  "form";
-    justify-content: space-evenly;
-    margin: 2rem 0rem 2.5rem 0rem; }
-  .jobs {
-    margin-top: 6rem; }
-  .form__contact form input {
-    font-size: 2.5vw; }
-  .form__contact form {
-    font-size: 2.5vw; }
-  .card {
-    width: 80%;
-    text-align: center; } }
+    grid-template-areas: "imagen"  "form" "team" "jobs";
+    justify-content: space-evenly; }
+    .sec__contact .form__contact {
+      padding-top: 3rem; }
+    .sec__contact .image__form {
+      max-width: 100%; }
+      .sec__contact .image__form img {
+        width: 100%; }
+      .sec__contact .image__form .jobs {
+        padding: 0; }
+    .sec__contact .team {
+      max-width: 100%; }
+      .sec__contact .team img {
+        width: 100%; } }
 
 * {
   font-family: Montserrat; }

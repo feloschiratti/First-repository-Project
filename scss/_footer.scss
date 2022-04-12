@@ -1,4 +1,5 @@
  /**selectores de elementos en footer**/
+ @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css");
 
  .section__footer{
     display: flex;
@@ -10,22 +11,22 @@
 
 .seccionFinal{
     background-color: #18242e;
-    height: 330px;
+    height: 400px;
 }
 
 .section__footer h3{
    padding-top: 2rem;
    color: white;
-   font-size: 1.5vw;
+   font-size: 1.1rem;
    text-align: center;
 }
 
 
 .seccion__jobs p{
    color: white;
-   font-size: 1.2vw;
+   font-size: 1rem;
    text-align: center;
-   padding-top: 0.5rem;
+   padding: 1rem 1rem 0rem 2rem;
    text-align: center;
 }
 
@@ -36,7 +37,7 @@
 
 .seccion__contacto ul{
 color: white;
-font-size: 1.2vw;
+font-size: 1rem;
 text-align: center;
 padding-top: 0.5rem;
 list-style: none;
@@ -44,44 +45,75 @@ list-style: none;
 
 .textoFooter{
     color: white;
-    font-size: 1vw;
+    font-size: 1rem;
     text-align: center;
     padding-top: 2rem;
-    padding-bottom: 1rem;
+    
 }
 
 .boton__footer{
+    margin-top: 2rem;
     @extend .boton__container;
+    & button{
+        background-color: $color-boton;
+    }
     & button:hover{
-        background-color: rgb(57, 40, 167);
+        background-color:white;
+        box-shadow: none;
+        
     }
 }
 
-/**MOBILE-FIRST FOOTER*/
+.socials{
+text-align: center;
+}
+
+.bi{
+    font-size: 1.5rem;
+    color: white;
+}
+
+
+/**MD FOOTER*/
+
+@media screen and (max-width: 992px){
+    .seccionFinal{
+        height: auto;
+
+        .section__footer{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+
+        .seccion__contacto{
+            width: 100%;
+            text-align: center;
+        }
+        .seccion__jobs{
+            width: 100%;
+            text-align: center;
+        }
+        .socials{
+            padding-bottom: 2rem;
+        }
+    }
+}
+
+/**XS FOOTER*/
 
 @media screen and (max-width: 600px){
-   .section__footer{
-       display: flex;
-       flex-direction: column;
-       width: 100%;
-   }
-
-   .seccion__contacto{
-       width: 100%;
-       text-align: center;
-   }
-   .seccion__jobs{
-       width: 100%;
-       text-align: center;
-   }
+    .seccionFinal{
+    
    .seccion__jobs p{
-       font-size: 2vw;
+       font-size: 1rem;
        margin: 0rem 1rem 0rem 1rem;
    }
    .seccion__contacto ul{
-       font-size: 2vw; 
+       font-size: 1rem; 
 }
 .section__footer h3{
-   font-size: 2.1vw; 
+   font-size: 1.3rem; 
+}
 }
 }
